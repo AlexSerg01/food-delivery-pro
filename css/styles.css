@@ -44,3 +44,135 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+
+/* =========modal Олексій========== */
+
+
+    /* щоб падінги враховувались в фінальні розміри елементів  */
+* { box-sizing: border-box;} 
+
+/* Модальне вікно */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 99, 99, 0.70);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.is-open {
+  visibility: visible;
+    z-index: 100;
+    opacity: 1;
+}
+
+/* Вікно форми */
+.modal-window {
+  position: relative;
+  width: 458px;
+  border-radius: 30px;
+    background: #FFE550;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    padding: 32px;
+}
+
+/* Кнопка закрити форму */
+.close-form-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);;
+}
+
+/* Заголовок форми */
+
+.form-name {
+  color: var(--Black, #2C2C2C);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+     margin: 0 auto; 
+     margin-bottom: 20px;
+    width: 123px;
+  }
+
+/* Інпути форми */
+
+.form-modal input {
+  display: block;
+    height: 48px;
+    width: 100%;
+  border-radius: 30px;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    background-color  : #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    padding-left: 14px;
+     margin: 0; 
+    /* Для тексту всередині */
+    color: #C4C4C4;
+      font-family: Roboto;
+      font-size: 16px;
+
+      font-weight: 400;
+      line-height: 1.25;
+}
+
+input:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+
+.form-modal input:focus {
+  border: 1px solid var(--Dark-green, #7EB101);
+  outline: none;
+}
+
+/* Назви інпутів форми */
+
+.modal-form-input-label {
+  margin-bottom: 2px;
+  margin-left: 12px;
+  color: var(--Black, #2C2C2C);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Кнопка відправити форму */
+
+.send-form-btn {
+  display: flex;
+    width: 106px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+      border: 2px solid var(--Dark-green, #7EB101);
+      background: #FFF;
+      margin: 0 auto;
+      margin-top: 32px;
+      /* Для тексту всередині */
+      color: var(--Black, #2C2C2C);
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5;
+}
+
+.send-form-btn:hover,
+.send-form-btn:focus {
+  background-color: var(--Button-green, #BBF330);
+}
