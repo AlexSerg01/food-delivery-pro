@@ -45,67 +45,6 @@ body {
   margin: 0 auto;
 }
 
-/* ---------header Borys----------- */
-
-.page-header {
-  background-color: #fefefe;
-  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
-}
-
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
-  align-items: center;
-}
-
-.right-side {
-  display: flex;
-  column-gap: 30px;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 28px;
-}
-
-.nav-menu .nav-menu-link {
-  display: block;
-  padding: 28px 0;
-  font-size: 14px;
-  color: #2c2c2c;
-}
-
-.nav-menu .home {
-  color: #bbf330;
-  font-weight: 700;
-  text-decoration-line: underline;
-}
-
-.order-button {
-  display: flex;
-  align-self: center;
-  min-width: 98px;
-  height: 32px;
-  color: #2c2c2c;
-  background-color: #bbf330;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 6px 18px;
-  border-radius: 30px;
-  border: none;
-  transition: background-color 250ms linear;
-}
-
-.order-button:hover,
-.order-button:focus {
-  background-color: #ffe450;
-}
-
 /* =========modal Олексій========== */
 
 /* щоб падінги враховувались в фінальні розміри елементів  */
@@ -252,3 +191,41 @@ input:not(:last-child) {
 .send-form-btn:focus {
   background-color: var(--Button-green, #bbf330);
 }
+/* Favorites Dima Ц */
+.section_favorites {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.header_favorites {
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.paragraf_favorites {
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.food_container {
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+.food_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 111px;
+  row-gap: 114px;
+}
+/* Favorites Dima Ц */
