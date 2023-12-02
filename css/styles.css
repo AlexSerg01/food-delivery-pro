@@ -45,19 +45,80 @@ body {
   margin: 0 auto;
 }
 
+/* ---------header Borys----------- */
+
+.page-header {
+  background-color: #fefefe;
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  column-gap: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.nav-menu .nav-menu-link {
+  display: block;
+  padding: 28px 0;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+.nav-menu .home {
+  color: #bbf330;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.order-button {
+  display: flex;
+  align-self: center;
+  min-width: 98px;
+  height: 32px;
+  color: #2c2c2c;
+  background-color: #bbf330;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: none;
+  transition: background-color 250ms linear;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #ffe450;
+}
 
 /* =========modal Олексій========== */
 
-
-    /* щоб падінги враховувались в фінальні розміри елементів  */
-* { box-sizing: border-box;} 
+/* щоб падінги враховувались в фінальні розміри елементів  */
+* {
+  box-sizing: border-box;
+}
 
 /* Модальне вікно */
 
 .modal {
   width: 100%;
   height: 100%;
-  background-color: rgba(94, 99, 99, 0.70);
+  background-color: rgba(94, 99, 99, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -69,8 +130,8 @@ body {
 
 .is-open {
   visibility: visible;
-    z-index: 100;
-    opacity: 1;
+  z-index: 100;
+  opacity: 1;
 }
 
 /* Вікно форми */
@@ -78,9 +139,9 @@ body {
   position: relative;
   width: 458px;
   border-radius: 30px;
-    background: #FFE550;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-    padding: 32px;
+  background: #ffe550;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  padding: 32px;
 }
 
 /* Кнопка закрити форму */
@@ -93,50 +154,49 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 /* Заголовок форми */
 
 .form-name {
-  color: var(--Black, #2C2C2C);
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-     margin: 0 auto; 
-     margin-bottom: 20px;
-    width: 123px;
-  }
+  color: var(--Black, #2c2c2c);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 123px;
+}
 
 /* Інпути форми */
 
 .form-modal input {
   display: block;
-    height: 48px;
-    width: 100%;
+  height: 48px;
+  width: 100%;
   border-radius: 30px;
-    border: 1px solid rgba(18, 18, 18, 0.12);
-    background-color  : #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
-    padding-left: 14px;
-     margin: 0; 
-    /* Для тексту всередині */
-    color: #C4C4C4;
-      font-family: Roboto;
-      font-size: 16px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+  padding-left: 14px;
+  margin: 0;
+  /* Для тексту всередині */
+  color: #c4c4c4;
+  font-family: Roboto;
+  font-size: 16px;
 
-      font-weight: 400;
-      line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 input:not(:last-child) {
   margin-bottom: 24px;
 }
 
-
 .form-modal input:focus {
-  border: 1px solid var(--Dark-green, #7EB101);
+  border: 1px solid var(--Dark-green, #7eb101);
   outline: none;
 }
 
@@ -145,34 +205,34 @@ input:not(:last-child) {
 .modal-form-input-label {
   margin-bottom: 2px;
   margin-left: 12px;
-  color: var(--Black, #2C2C2C);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.4;
+  color: var(--Black, #2c2c2c);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* Кнопка відправити форму */
 
 .send-form-btn {
   display: flex;
-    width: 106px;
-    padding: 10px 0px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-      border: 2px solid var(--Dark-green, #7EB101);
-      background: #FFF;
-      margin: 0 auto;
-      margin-top: 32px;
-      /* Для тексту всередині */
-      color: var(--Black, #2C2C2C);
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 1.5;
+  width: 106px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 2px solid var(--Dark-green, #7eb101);
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 32px;
+  /* Для тексту всередині */
+  color: var(--Black, #2c2c2c);
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .send-form-btn:hover,
 .send-form-btn:focus {
-  background-color: var(--Button-green, #BBF330);
+  background-color: var(--Button-green, #bbf330);
 }
