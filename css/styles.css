@@ -64,13 +64,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.is-open {
-  visibility: visible;
-  z-index: 100;
-  opacity: 1;
+.is-hidden {
+  visibility: hidden;
+  /* z-index: 100; */
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Вікно форми */
@@ -86,6 +89,11 @@ body {
 /* Кнопка закрити форму */
 .close-form-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 0;
   top: 12px;
   right: 12px;
   width: 24px;
@@ -96,6 +104,14 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
+.close-form-btn-svg {
+  transition: fill 250ms ease-in-out;
+}
+
+
+.close-form-btn:hover > .close-form-btn-svg, .close-form-btn:focus > .close-form-btn-svg  {
+  fill: #ffe550;
+}
 /* Заголовок форми */
 
 .form-name {
