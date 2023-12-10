@@ -191,6 +191,65 @@ input:not(:last-child) {
 .send-form-btn:focus {
   background-color: var(--Button-green, #bbf330);
 }
+
+/*====HERO Діма Щ===== */
+
+.section-hero {
+  padding-top: 0;
+  padding-bottom: 55px;
+  background: #FEFEFE;
+}
+
+.hero-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.hero-title {
+  max-width: 500px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.hero-description {
+  width: 511px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.btn-order-hero {
+display: inline-flex;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  background-color: #BBF330;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero-border-img {
+  width: 580px;
+  height: 580px;
+border-radius: 580px;
+  border: 26px solid var(--Yellow-main, #FFE550);
+  background: var(--White, #FEFEFE);
+}
+.hero-img {
+  position: relative;
+  top: 0;
+  right: 9px;
+}
+
+
 /* Favorites Dima Ц */
 .section_favorites {
   padding-top: 100px;
