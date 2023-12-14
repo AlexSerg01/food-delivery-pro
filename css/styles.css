@@ -45,6 +45,237 @@ body {
   margin: 0 auto;
 }
 
+/* ---------header Borys----------- */
+
+.page-header {
+  background-color: #fefefe;
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  column-gap: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.nav-menu .nav-menu-link {
+  display: block;
+  padding: 28px 0;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+.nav-menu .home {
+  color: #bbf330;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.order-button {
+  display: flex;
+  align-self: center;
+  min-width: 98px;
+  height: 32px;
+  color: #2c2c2c;
+  background-color: #bbf330;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: none;
+  transition: background-color 250ms linear;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #ffe450;
+}
+
+/*====HERO Діма Щ===== */
+
+.section-hero {
+  padding-top: 0;
+  padding-bottom: 55px;
+  background: #fefefe;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-title {
+  max-width: 500px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.hero-description {
+  width: 511px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.btn-order-hero {
+  display: inline-flex;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  background-color: #bbf330;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color 250ms linear;
+}
+
+.btn-order-hero:hover,
+.btn-order-hero:focus {
+  background-color: #ffe450;
+}
+
+.hero-border-img {
+  width: 580px;
+  height: 580px;
+  border-radius: 580px;
+  border: 26px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
+}
+.hero-img {
+  position: relative;
+  top: 0;
+  right: 9px;
+}
+
+/* Favorites Dima Ц */
+.section_favorites {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.header_favorites {
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.paragraf_favorites {
+  color: var(--Black, #2c2c2c);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.food_container {
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+.food_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 111px;
+  row-gap: 114px;
+}
+/* Favorites Dima Ц */
+/* ================== SUBSCRIBE SECTION ================== */
+.subscribe-section {
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-wrapper {
+  padding: 46px 0 36px 0;
+}
+.subscribe-title {
+  width: 656px;
+  color: #2c2c2c;
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.subscribe-text {
+  padding: 20px 107px 24px 0;
+  width: 639px;
+  color: #2c2c2c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.subscribe-form {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+}
+.subscribe-input {
+  width: 395px;
+  height: 42px;
+  padding: 12px 57px 12px 12px;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #ffe550;
+  background: #fefefe;
+  color: #505050;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.subscribe-input::placeholder {
+  color: #505050;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.subscribe-btn {
+  background-color: #bbf330;
+  color: #2c2c2c;
+  display: inline-flex;
+  padding: 11px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* ================== /SUBSCRIBE SECTION ================== */
+
 /* =========modal Олексій========== */
 
 /* щоб падінги враховувались в фінальні розміри елементів  */
@@ -191,167 +422,3 @@ input:not(:last-child) {
 .send-form-btn:focus {
   background-color: var(--Button-green, #bbf330);
 }
-
-/*====HERO Діма Щ===== */
-
-.section-hero {
-  padding-top: 0;
-  padding-bottom: 55px;
-  background: #fefefe;
-}
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero-title {
-  max-width: 500px;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 28px;
-}
-
-.hero-description {
-  width: 511px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-
-.btn-order-hero {
-  display: inline-flex;
-  padding: 6px 18px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  border: none;
-  background-color: #bbf330;
-  text-align: right;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.hero-border-img {
-  width: 580px;
-  height: 580px;
-  border-radius: 580px;
-  border: 26px solid var(--Yellow-main, #ffe550);
-  background: var(--White, #fefefe);
-}
-.hero-img {
-  position: relative;
-  top: 0;
-  right: 9px;
-}
-
-/* Favorites Dima Ц */
-.section_favorites {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.header_favorites {
-  color: var(--Black, #2c2c2c);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.paragraf_favorites {
-  color: var(--Black, #2c2c2c);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.food_container {
-  margin: 0 auto;
-  padding: 0px 16px;
-}
-.food_list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  column-gap: 111px;
-  row-gap: 114px;
-}
-/* Favorites Dima Ц */
-/* ================== SUBSCRIBE SECTION ================== */
-.subscribe-section {
-  width: 1280px;
-  padding: 0 16px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.subscribe-wrapper {
-  padding: 46px 0 36px 0;
-}
-.subscribe-title {
-  width: 656px;
-  color: #2c2c2c;
-  font-family: Roboto;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 120%;
-}
-.subscribe-text {
-  padding: 20px 107px 24px 0;
-  width: 639px;
-  color: #2c2c2c;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
-.subscribe-form {
-  display: flex;
-  align-items: baseline;
-  gap: 32px;
-}
-.subscribe-input {
-  width: 395px;
-  height: 42px;
-  padding: 12px 57px 12px 12px;
-  align-items: center;
-  border-radius: 30px;
-  border: 0.854px solid #ffe550;
-  background: #fefefe;
-  color: #505050;
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
-}
-.subscribe-input::placeholder {
-  color: #505050;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
-}
-.subscribe-btn {
-  background-color: #bbf330;
-  color: #2c2c2c;
-  display: inline-flex;
-  padding: 11px 22px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  border: none;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 150%;
-}
-
-/* ================== /SUBSCRIBE SECTION ================== */
