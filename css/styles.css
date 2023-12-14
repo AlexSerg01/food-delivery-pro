@@ -288,3 +288,71 @@ border-radius: 580px;
   row-gap: 114px;
 }
 /* Favorites Dima Ц */
+/* ================== SUBSCRIBE SECTION ================== */
+.subscribe-section {
+  margin: 0 15px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  }
+  .subscribe-wrapper {
+  padding: 46px 0 36px 0;
+  }
+  .subscribe-title {
+  width: 656px;
+  color: #2C2C2C;
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 120%; 
+  }
+  .subscribe-text {
+  padding: 20px 107px 24px 0;
+  width: 639px;
+  color: #2C2C2C;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; 
+  }
+  .subscribe-form {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+  }
+  .subscribe-input {
+  width: 395px;
+  height: 42px;
+  padding: 12px 57px 12px 12px;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #FFE550;
+  background: #FEFEFE;
+  color: #505050;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%; 
+  }
+  .subscribe-input::placeholder {
+  color: #505050;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%; 
+  }
+  .subscribe-btn {
+  background-color: #BBF330;
+  color: #2C2C2C;
+  display: inline-flex;
+  padding: 11px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%; 
+  }
+  
+  /* ================== /SUBSCRIBE SECTION ================== */
+  
